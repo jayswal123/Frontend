@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(/image/blur.jpg);
+    }
+
+
+    input {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+
+    input:focus {
+        background-color: grey;
+        color: white;
+    }
+
+
+    .container {
+        margin: 0px 690px;
+        width: 500px;
+        padding: 25px;
+        background-color: lightblue;
+    }
+
+    .button {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: gray
+    }
+
+    p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+        width: fit-content;
+    }
+
+    div:hover p {
+        display: block;
+    }
+</style>
+</head>
+
+<body>
+    <center>
+        <h1>Login Form </h1>
+    </center>
+    <form>
+        <div class="container">
+            Username :
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <a href="/Homepage.html"> <input type="button" value="Login" class="button"> </a>
+        </div>
+    </form>
+
+    <div style="text-align: center; margin-top: 50px;">Hover here to see something
+        <p>the login will take you to the Homepage</p>
+    </div>
+
+
+
+</body>
+
+</html>
